@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en"  data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+
+
+<style>
+    body{
+        font-family: 'Playfair Display', serif;
+    }
+    span{
+        color: orange;
+    }
+
+    #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: whitesmoke;
+  /* color: white; */
+  /* cursor: pointer; */
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color: orange;
+}
+#zone:hover {
+  color: whitesmoke;
+}
+</style>
+
+  <body>
+  <body class="bg-body-tertiary" >
+
+
+        <header>
+            <nav class="navbar   navbar-dark bg-black fixed-top bg-opacity-75 ">
+              <div class="container">
+                <a class="navbar-brand" href="m.html"> <h3> <b>BEAUTIFUL <span>BEACHES</span></b></h3></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                  <div class="offcanvas-header">
+                    <h4 class="offcanvas-title" id="offcanvasDarkNavbarLabel">BEAUTIFUL <span>BEACHES</span></h4>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about .html">About Us</a>
+                      </li>
+                      
+                      <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Our Zones
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a style="color: orange;" class="dropdown-item " href="#"> EastZone</a></li>
+                          <li><a style="color: orange;" class="dropdown-item " href="#"> WestZone</a></li>
+                          <li><a style="color: orange;" class="dropdown-item " href="#"> NorthZone</a></li>
+                          <li><a style="color: orange;" class="dropdown-item " href="#"> SouthZone</a></li>
+                        </ul>
+                      </li>
+                      
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                      </li>
+                      
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Gallery</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Feedback</a>
+                      </li>
+                      <a class="button1"  href="#" ><button  class="btn btn-outline-success " type="submit">Book Now  </button></a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </header>
+
+    <div class="container bg-dark">
+      <main>
+        <div class="py-5 text-center">
+          <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+          <h3>CONTACT <span>FORM</span></h3>
+          <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+        </div>
+    
+        <div class="row g-5">
+          <div class="col-md-5 col-lg-4 order-md-last">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-primary">Your cart</span>
+              <span class="badge bg-primary rounded-pill">3</span>
+            </h4>
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Product name</h6>
+                  <small class="text-body-secondary">Brief description</small>
+                </div>
+                <span class="text-body-secondary">$12</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Second product</h6>
+                  <small class="text-body-secondary">Brief description</small>
+                </div>
+                <span class="text-body-secondary">$8</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Third item</h6>
+                  <small class="text-body-secondary">Brief description</small>
+                </div>
+                <span class="text-body-secondary">$5</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+                <div class="text-success">
+                  <h6 class="my-0">Promo code</h6>
+                  <small>EXAMPLECODE</small>
+                </div>
+                <span class="text-success">−$5</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Total (USD)</span>
+                <strong>$20</strong>
+              </li>
+            </ul>
+    
+            <form class="card p-2">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Promo code">
+                <button type="submit" class="btn btn-secondary">Redeem</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-7 col-lg-8">
+            <h4 class="mb-3">Billing address</h4>
+            <form>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="Name" value="" required="">
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
+                </div>
+    
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="Last Name" value="" required="">
+                  <div class="invalid-feedback">
+                    Valid last name is required.
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="username" class="form-label">Username</label>
+                  <div class="input-group ">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                  <div class="invalid-feedback">
+                      Your username is required.
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="email" class="form-label">Email <span class="text-body-secondary">(Optional)</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                  <div class="invalid-feedback">
+                    Please enter a valid email address for shipping updates.
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="address" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                  <div class="invalid-feedback">
+                    Please enter your shipping address.
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="address2" class="form-label">Address 2 <span class="text-body-secondary">(Optional)</span></label>
+                  <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                </div>
+    
+                <div class="col-md-5">
+                  <label for="country" class="form-label">Country</label>
+                  <select class="form-select" id="country" required="">
+                    <option value="Slecet">Choose...</option>
+                    <option>United States</option>
+                    <option>Pakistan</option>
+                    <option>Europe</option>
+                    <option>Canada</option>
+                    <option>Brazil</option>
+                    <option>India</option>
+                    <option>China</option>
+                    <option>Australia</option>
+                    <option>France</option>
+                    <option>Germany</option>
+                    <option>South Africa</option>
+                    <option>Japan</option>
+                  </select>
+                  
+                </div>
+    
+                <div class="col-md-4">
+                  <label for="state" class="form-label">State</label>
+                  <select class="form-select" id="state" required="">
+                    <option value="">Choose...</option>
+                    <option>
+                        Karachi</option>
+                    <option>New York City</option>
+                    <option>Toronto</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Mumbai</option>
+                    <option>Beijing</option>
+                    <option>Sydney</option>
+                    <option> Paris</option>
+                    <option>Berlin</option>
+                    <option>Cape Town</option>
+                    <option> Tokyo</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please provide a valid state.
+                  </div>
+                </div>
+    
+             
+    
+              <hr class="my-4">
+    
+            
+    
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="save-info">
+                <label class="form-check-label" for="save-info">Save this information for next time</label>
+              </div>
+    
+              <hr class="my-4">
+    
+              <h4 class="mb-3">Payment</h4>
+    
+              <div class="my-3">
+                <div class="form-check">
+                  <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                  <label class="form-check-label" for="credit">Credit card</label>
+                </div>
+                <div class="form-check">
+                  <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                  <label class="form-check-label" for="debit">Debit card</label>
+                </div>
+                <div class="form-check">
+                  <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+                  <label class="form-check-label" for="paypal">PayPal</label>
+                </div>
+              </div>
+    
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <label for="cc-name" class="form-label">Name on card</label>
+                  <input type="text" class="form-control" id="cc-name" placeholder="Name on card is required" required="">
+                  <small class="text-body-secondary">Full name as displayed on card</small>
+                
+                </div>
+    
+                <div class="col-md-6">
+                  <label for="cc-number" class="form-label">Credit card number</label>
+                  <input type="text" class="form-control" id="cc-number" placeholder=" Credit card number is required" required="">
+                </div>
+    
+                <div class="col-md-4">
+                  <label for="cc-expiration" class="form-label">Expiration</label>
+                  <input type="text" class="form-control" id="cc-expiration" placeholder="Expiration date required" required="">
+                </div>
+    
+                <div class="col-md-4">
+                  <label for="cc-cvv" class="form-label">CVV</label>
+                  <input type="text" class="form-control" id="cc-cvv" placeholder="Security code required" required="">
+              </div>
+    
+              <hr class="my-4">
+    
+              <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+
+
+
+    <footer class="container-fluid py-5  bg-black bg-opacity-75  ">
+        <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-3">
+           
+           <a class="text-decoration-none text-bg-dark" href="m.html"><h4>BEAUTIFUL <span>BEACHES</span></h4></a>
+    
+          </div>
+          <div class="col-6 col-md-2">
+            <h5>ABOUT <span>US</span> </h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary text-decoration-none" href="#">Our Mission</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Explore Zones</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Captivating Galleries</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Share Your Thoughts</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Downloadable Details</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Advertisement Section</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2">
+            <h5>OUR <span>ZONNES</span> </h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary text-decoration-none" href="#">East-Zone</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">West-Zone</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">North-zone</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">SouthZone</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2">
+            <h5>OUR <span>GALLERY</span> </h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary text-decoration-none" href="#">Sunrise Serenity</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Footprints in the Sand</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Seashells and Secrets</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Surfing Elegance</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Tropical Paradise</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Beach Bonfire Magic</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Coastal Wildlife Wonder</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Sunset Silhouettes</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2">
+            <h5>CONTACT <span>US</span> </h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary text-decoration-none" href="#">Customer Service</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Business Inquiries</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Address</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Social Media</a></li>
+            </ul>
+          </div>
+    
+    
+      </footer>
+      
+      
+          
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/up.png" alt=""></button></i></a>
+      <script>
+    
+        let mybutton = document.getElementById("myBtn");
+        
+    
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+      
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+
+
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+        <script src="checkout.js"></script>
+    
+    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
